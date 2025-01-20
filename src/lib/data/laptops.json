@@ -1,0 +1,124 @@
+{
+  "laptops": [
+    {
+      "id": 1,
+      "name": "MacBook Pro M2",
+      "price": 1499,
+      "processor": "Apple M2",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "performance": 90,
+      "shortDescription": "Puissant portable Apple avec une excellente autonomie",
+      "brand": "Apple",
+      "image": "https://picsum.photos/300/200"
+    },
+    {
+      "id": 2,
+      "name": "Dell XPS 13",
+      "price": 1299,
+      "processor": "Intel i7-1260P",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "performance": 85,
+      "shortDescription": "Ultra-portable premium avec écran InfinityEdge",
+      "brand": "Dell",
+      "image": "https://picsum.photos/300/200"
+    },
+    {
+      "id": 3,
+      "name": "Lenovo ThinkPad X1",
+      "price": 1399,
+      "processor": "Intel i7-1270P",
+      "ram": "32GB",
+      "storage": "1TB SSD",
+      "performance": 88,
+      "shortDescription": "Laptop professionnel robuste et performant",
+      "brand": "Lenovo",
+      "image": "https://picsum.photos/300/200"
+    },
+    {
+      "id": 4,
+      "name": "HP Envy x360",
+      "price": 899,
+      "processor": "AMD Ryzen 7 5800U",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "performance": 82,
+      "shortDescription": "Convertible polyvalent avec écran tactile",
+      "brand": "HP",
+      "image": "https://picsum.photos/300/200"
+    },
+    {
+      "id": 5,
+      "name": "Asus ROG Zephyrus",
+      "price": 1799,
+      "processor": "AMD Ryzen 9 5900HS",
+      "ram": "32GB",
+      "storage": "1TB SSD",
+      "performance": 95,
+      "shortDescription": "Laptop gaming haute performance",
+      "brand": "Asus",
+      "image": "https://picsum.photos/300/200"
+    },
+    {
+      "id": 6,
+      "name": "MacBook Air M2",
+      "price": 1199,
+      "processor": "Apple M2",
+      "ram": "8GB",
+      "storage": "256GB SSD",
+      "performance": 80,
+      "shortDescription": "Ultra-portable léger et silencieux",
+      "brand": "Apple",
+      "image": "https://picsum.photos/300/200"
+    },
+    {
+      "id": 7,
+      "name": "Dell Inspiron 15",
+      "price": 799,
+      "processor": "Intel i5-1235U",
+      "ram": "8GB",
+      "storage": "512GB SSD",
+      "performance": 75,
+      "shortDescription": "Laptop polyvalent pour tous les jours",
+      "brand": "Dell",
+      "image": "https://picsum.photos/300/200"
+    },
+    {
+      "id": 8,
+      "name": "Lenovo Legion 5",
+      "price": 1299,
+      "processor": "AMD Ryzen 7 5800H",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "performance": 87,
+      "shortDescription": "Gaming laptop avec excellent rapport qualité-prix",
+      "brand": "Lenovo",
+      "image": "https://picsum.photos/300/200"
+    },
+    {
+      "id": 9,
+      "name": "HP Spectre x360",
+      "price": 1399,
+      "processor": "Intel i7-1255U",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "performance": 83,
+      "shortDescription": "Convertible premium avec design élégant",
+      "brand": "HP",
+      "image": "https://picsum.photos/300/200"
+    },
+    {
+      "id": 10,
+      "name": "Asus ZenBook 14",
+      "price": 999,
+      "processor": "Intel i5-1240P",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "performance": 78,
+      "shortDescription": "Ultra-portable avec excellent écran OLED",
+      "brand": "Asus",
+      "image": "https://picsum.photos/300/200"
+    }
+  ]
+} 
