@@ -10,7 +10,7 @@
       "performance": 90,
       "shortDescription": "Puissant portable Apple avec une excellente autonomie",
       "brand": "Apple",
-      "image": "https://picsum.photos/300/200"
+      "image": "/images/laptops/macbook-pro-m2.webp"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "performance": 85,
       "shortDescription": "Ultra-portable premium avec écran InfinityEdge",
       "brand": "Dell",
-      "image": "https://picsum.photos/300/200"
+      "image": "/images/laptops/dell-xps-13.webp"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "performance": 88,
       "shortDescription": "Laptop professionnel robuste et performant",
       "brand": "Lenovo",
-      "image": "https://picsum.photos/300/200"
+      "image": "/images/laptops/lenovo-thinkpad-x1.webp"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
       "performance": 82,
       "shortDescription": "Convertible polyvalent avec écran tactile",
       "brand": "HP",
-      "image": "https://picsum.photos/300/200"
+      "image": "/images/laptops/hp-envy-x360.webp"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
       "performance": 95,
       "shortDescription": "Laptop gaming haute performance",
       "brand": "Asus",
-      "image": "https://picsum.photos/300/200"
+      "image": "/images/laptops/asus-rog-zephyrus.webp"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
       "performance": 80,
       "shortDescription": "Ultra-portable léger et silencieux",
       "brand": "Apple",
-      "image": "https://picsum.photos/300/200"
+      "image": "/images/laptops/macbook-air-m2.webp"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@
       "performance": 75,
       "shortDescription": "Laptop polyvalent pour tous les jours",
       "brand": "Dell",
-      "image": "https://picsum.photos/300/200"
+      "image": "/images/laptops/dell-inspiron-15.webp"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
       "performance": 87,
       "shortDescription": "Gaming laptop avec excellent rapport qualité-prix",
       "brand": "Lenovo",
-      "image": "https://picsum.photos/300/200"
+      "image": "/images/laptops/lenovo-legion-5.webp"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@
       "performance": 83,
       "shortDescription": "Convertible premium avec design élégant",
       "brand": "HP",
-      "image": "https://picsum.photos/300/200"
+      "image": "/images/laptops/hp-spectre-x360.webp"
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@
       "performance": 78,
       "shortDescription": "Ultra-portable avec excellent écran OLED",
       "brand": "Asus",
-      "image": "https://picsum.photos/300/200"
+      "image": "/images/laptops/asus-zenbook-14.webp"
     }
   ]
 } 

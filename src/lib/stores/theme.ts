@@ -2,8 +2,8 @@ import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
 
 // Récupérer la préférence sauvegardée ou la préférence système
-const userTheme = browser && (localStorage.getItem('theme') || 
-  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+const userTheme = browser ? (localStorage.getItem('theme') || 
+  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) : 'light';
 
 export const theme = writable(userTheme);
 

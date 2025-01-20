@@ -7,6 +7,7 @@
   let priceRange = [0, 2000];
   let selectedBrand = 'all';
   let ssdOnly = false;
+  let ram32Only = false;
 
   // Obtenir la liste unique des marques
   $: brands = ['all', ...new Set(laptops.map(l => l.brand))];
@@ -17,8 +18,9 @@
       const matchesPrice = laptop.price >= priceRange[0] && laptop.price <= priceRange[1];
       const matchesBrand = selectedBrand === 'all' || laptop.brand === selectedBrand;
       const matchesSsd = !ssdOnly || laptop.storage.toLowerCase().includes('ssd');
+      const matches32GB = !ram32Only || laptop.ram.includes('32GB');
       
-      return matchesPrice && matchesBrand && matchesSsd;
+      return matchesPrice && matchesBrand && matchesSsd && matches32GB;
     });
     
     onFiltersChange(filtered);
@@ -26,7 +28,7 @@
 
   // Réagir aux changements des filtres
   $: {
-    priceRange, selectedBrand, ssdOnly;
+    priceRange, selectedBrand, ssdOnly, ram32Only;
     applyFilters();
   }
 </script>
@@ -88,8 +90,21 @@
       bind:checked={ssdOnly}
       class="h-4 w-4 text-blue-600"
     />
-    <label for="ssdOnly" class="ml-2 text-sm text-gray-700">
+    <label for="ssdOnly" class="ml-2 text-sm text-gray-700 dark:text-gray-300">
       SSD uniquement
+    </label>
+  </div>
+
+  <!-- Filtre 32GB -->
+  <div class="flex items-center mt-2">
+    <input
+      type="checkbox"
+      id="ram32Only"
+      bind:checked={ram32Only}
+      class="h-4 w-4 text-blue-600"
+    />
+    <label for="ram32Only" class="ml-2 text-sm text-gray-700 dark:text-gray-300">
+      32GB RAM uniquement
     </label>
   </div>
 </div> 

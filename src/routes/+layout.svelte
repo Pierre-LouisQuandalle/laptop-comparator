@@ -12,7 +12,7 @@
 <div class="min-h-screen transition-colors duration-300 dark:bg-gray-900">
 	<nav class="p-4 flex justify-end">
 		<button
-			on:click={toggleTheme}
+			onclick={toggleTheme}
 			class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
 			aria-label="Toggle theme"
 		>
@@ -24,5 +24,5 @@
 		</button>
 	</nav>
 
-	<slot />
+	{@render children()}
 </div>

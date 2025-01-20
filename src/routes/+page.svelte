@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import LaptopCard from '$lib/components/LaptopCard.svelte';
   import LaptopFilters from '$lib/components/LaptopFilters.svelte';
   import type { Laptop } from '$lib/types/Laptop';
@@ -10,7 +11,7 @@
   let showingRecommendations = false;
 
   // Charger les recommandations au démarrage
-  async function initRecommendations() {
+  onMount(async () => {
     try {
       const response = await fetch('/api/recommendations');
       const data = await response.json();
@@ -18,10 +19,7 @@
     } catch (error) {
       console.error('Erreur lors du chargement des recommandations:', error);
     }
-  }
-
-  // Exécuter au montage du composant
-  initRecommendations();
+  });
 
   function handleFiltersChange(filtered: Laptop[]) {
     filteredLaptops = filtered;
