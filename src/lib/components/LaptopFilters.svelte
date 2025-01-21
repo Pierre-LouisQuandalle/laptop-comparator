@@ -3,10 +3,10 @@
 
 	interface Props {
 		laptops: Laptop[];
-		onFiltersChange: (filtered: Laptop[]) => void;
+		filteredLaptops: Laptop[];
 	}
 
-	let { laptops, onFiltersChange }: Props = $props();
+	let { laptops, filteredLaptops = $bindable() }: Props = $props();
 
 	let priceRange = $state([0, 2000]);
 	let selectedBrand = $state('all');
@@ -17,20 +17,15 @@
 	let brands = $derived(['all', ...new Set(laptops.map((l) => l.brand))]);
 
 	// Fonction de filtrage
-	let filteredLaptops = $derived(
-		laptops.filter((laptop) => {
+	$effect(() => {
+		filteredLaptops = laptops.filter((laptop) => {
 			const matchesPrice = laptop.price >= priceRange[0] && laptop.price <= priceRange[1];
 			const matchesBrand = selectedBrand === 'all' || laptop.brand === selectedBrand;
 			const matchesSsd = !ssdOnly || laptop.storage.toLowerCase().includes('ssd');
 			const matches32GB = !ram32Only || laptop.ram.includes('32GB');
 
 			return matchesPrice && matchesBrand && matchesSsd && matches32GB;
-		})
-	);
-
-	// Réagir aux changements des filtres
-	$effect(() => {
-		onFiltersChange(filteredLaptops);
+		});
 	});
 </script>
 
