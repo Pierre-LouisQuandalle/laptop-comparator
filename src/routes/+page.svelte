@@ -6,9 +6,9 @@
   import laptopsData from '$lib/data/laptops.json';
 
   const laptops: Laptop[] = laptopsData.laptops;
-  let filteredLaptops = laptops;
-  let recommendedIds: number[] = [];
-  let showingRecommendations = false;
+  let filteredLaptops = $state(laptops);
+  let recommendedIds: number[] = $state([]);
+  let showingRecommendations = $state(false);
 
   // Charger les recommandations au démarrage
   onMount(async () => {
@@ -22,6 +22,7 @@
   });
 
   function handleFiltersChange(filtered: Laptop[]) {
+    console.log(filtered);
     filteredLaptops = filtered;
   }
 
@@ -48,7 +49,7 @@
   
   <div class="flex justify-center mb-6">
     <button
-      on:click={loadRecommendations}
+      onclick={loadRecommendations}
       class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors"
     >
       {showingRecommendations ? 'Voir tous les produits' : 'Voir les recommandations'}
